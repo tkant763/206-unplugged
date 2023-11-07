@@ -97,6 +97,7 @@ body {
   font-size: 1em;
   text-align: left;
   color: #e2e3ed;
+  background-color: #202322;
 }
 
 ul,
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -241,7 +243,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url(../img/unplugged-retreat.jpg) center no-repeat #333;
+  background: url(../img/unplugged-retreat.jpg) center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -290,7 +292,7 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -306,18 +308,17 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
-}
-
-.features p {
-  margin: 0;
-  text-align: center;
 }
 
 .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
+}
+
+.features p {
+  margin: 0;
+  text-align: center;
 }
 
 /* Reviews */
@@ -562,6 +563,10 @@ input[type=button] {
   .features h2  {
     margin-bottom: 20px;
   }
+  
+  .features .features-items {
+    align-items: flex-start;
+  }
 
   .features article {
     display: flex;
@@ -572,6 +577,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -603,7 +612,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
   
   footer .contact {
@@ -619,8 +627,9 @@ input[type=button] {
     line-height: 1.285;
   }
 
-  footer .social {
-    width: 35%;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -746,19 +755,15 @@ input[type=button] {
     font-size: 1.875em;
   }
 
-  footer .social {
-    width: 25%;
-  }
-
   /* About Page */
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+  
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
-  }
-
-  .map figure {
-    padding-bottom: 37.5%;
   }
 
   .contact-content h4 {
